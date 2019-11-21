@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("images/bg1.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+        }
+
+        .loginbox {
+            width: 320px;
+            height: 420px;
+            background: #000;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: calc(50% - 50px);
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .loginbox p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .loginbox input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .loginbox input[type="text"],
+        input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .loginbox input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #fb2525;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+
+        .loginbox input[type="submit"]:hover {
+            cursor: pointer;
+            background: #ffc107;
+            color: #000;
+        }
+
+        .loginbox a {
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 20px;
+            color: darkgrey;
+        }
+
+        .loginbox a:hover {
+            color: #ffc107;
+        }
+
+        footer{
+            margin-top: 600px;
+        }
+        
+        footer .social-media ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            list-style: none;
+            justify-items: center;
+            background: olive;
+            border-radius: 10px;
+
+            height: 35px;
+            padding: 25px;
+            margin: 25px;
+        }
+
+        footer .social-media ul a{
+            display: flex;
+            text-decoration: none;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="loginbox">
+        <img src="images/avatar.png" class="avatar">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            <input type="submit" name="" value="Login">
+            <a href="#">Forgot password?</a><br>
+            <a href="#">Don't have an account?</a>
+        </form>
+    </div>
+    <footer>
+        <div class="social-media">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net"><i class="fab fa-behance fa-2x"></i></a>
+                </li>
+                <li>
+                        <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-2x"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
